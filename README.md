@@ -41,14 +41,15 @@
   7. Name the columns based on the "Features" data (**Appropriately labels the data set with descriptive variable names (requirement #4)**)
 3. **Extract only the measurements on the mean and standard deviation for each measurement (requirement #2)**
   1. Subset the merged data frame to the columns representing mean and standard deviation
-  2. I have chosen to do this by searching for all variable names containing the strings "Mean," "mean," and "std."
+  2. To do this, search for all variable names containing the strings "Mean," "mean," and "std."
 4. **Create a second, independent tidy data set with the average of each variable for each activity and each subject (requirement #5)**
   1. Make all column names legal for R by removing all parentheses and dashes.
   2. Change variable names to Camel Case (i.e., capitalize "Mean" and "Std" regardless of where in the column name they appear) to increase readability.
-  3. Change the "Subject" column to a factor for easier manipulation.
-  4. Sort the merged data frame by "Subject" and "Activity"
-  5. Calculate the average (mean) of each numeric column and return a data frame ("merged_summary" in the script) with the average for each subject/activity combination.
-  6. As instructed, write this data frame to a text file called "samsung_summary.txt" using "row.names = FALSE."
+  3. Change the names of the misnamed variables in the original data set (i.e., change "BodyBody" to "Body"). 
+  4. Change the "Subject" column to a factor for easier manipulation.
+  5. Sort the merged data frame by "Subject" and "Activity"
+  6. Calculate the average (mean) of each numeric column and return a data frame ("merged_summary" in the script) with the average for each subject/activity combination.
+  7. As instructed, write this data frame to a text file called "samsung_summary.txt" using "row.names = FALSE."
 
 ### References
 
