@@ -54,7 +54,7 @@
 
 1. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. [Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
 2. David Hood.  [David's Course Project FAQ](https://class.coursera.org/getdata-011/forum/thread?thread_id=69).  Getting and Cleaning Data Discussion Forum.  Coursera.  Feb 2015.
-3. Davod Hood.  [Response to "Final Step"](https://class.coursera.org/getdata-011/forum/thread?thread_id=169#post-807).  Response on Getting and Cleaning Data Discussion Forum.  Coursera.  Feb 2015.
+3. David Hood.  [Response to "Final Step"](https://class.coursera.org/getdata-011/forum/thread?thread_id=169#post-807).  Response on Getting and Cleaning Data Discussion Forum.  Coursera.  Feb 2015.
 4. Simon Hanlon. [Response to "Elegant way to check for missing packages and install them?"](http://stackoverflow.com/a/19870272). Stack Overflow. Nov 2013.
 5. Sean C. Anderson. [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html).  Blog post on http://seananderson.ca/. Oct 2013.
 6. Matthew Taylor. [Silly situation: trouble with unzipping the DataSet.zip file](https://class.coursera.org/getdata-011/forum/thread?thread_id=270#post-1270).  Response on Getting and Cleaning Data Discussion Forum.  Coursera.  Feb 2015.
