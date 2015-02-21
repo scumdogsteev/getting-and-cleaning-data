@@ -162,12 +162,14 @@ if (!file.exists("./UCI HAR Dataset")) {
      ## make them legal for R by substituting a blank ("") for all instances
      ## of "(", ")", and "-" (using escape characters for the parentheses). 
      ## "\\(|\\)|-," is a regular expression meaning "open parentheses OR
-     ## close parentheses OR dash OR comma."  also replace all lowercase
-     ## instances of "mean" and "std" with "Mean" and "Std" to create Camel
-     ## Case variable names to increase readability.
+     ## close parentheses OR dash OR comma."  
      names(merged) <- gsub("\\(|\\)|-|,", "", names(merged))
+     ## replace all lowercase instances of "mean" and "std" with "Mean" and
+     ## "Std" to create Camel Case variable names to increase readability.
      names(merged) <- gsub("mean", "Mean", names(merged))
      names(merged) <- gsub("std", "Std", names(merged))
+     ## rename the misnamed variables from the original data set by changing
+     ## "BodyBody" to "Body"
      names(merged) <- gsub("BodyBody", "Body", names(merged))
 
      ## convert the "Subject" column to factor (rather than numeric)
