@@ -25,6 +25,7 @@
   2. If the "UCI HAR Dataset" folder is not available, the script checks whether the original zip file is available.  If so, it is unzipped and the script continues.
   3. If the original zip file is not available, the script downloads the file from the Internet, unzips it, and continues the script.
 2. The user has either previously installed the [plyr](http://cran.r-project.org/web/packages/plyr/index.html),  [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html), and [reshape2](http://cran.r-project.org/web/packages/reshape2/index.html) packages or is connected to the Internet so the script can install them.
+3. "Extracts only the measurements on the mean and standard deviation" is assumed to mean all from the original data set variables with the strings "Mean," "mean," or "std" in their names.
 
 #### Process
 
