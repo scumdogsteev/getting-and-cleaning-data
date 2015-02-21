@@ -91,10 +91,11 @@ if (!file.exists("./UCI HAR Dataset")) {
      names(train_activities) <- "ActKey"
 
      ## read the training data (X_train.txt) and the training subject data
-     ## (subject_train.txt)
+     ## (subject_train.txt) and name the subject column "Subject"
      train_data <- read.table("./UCI HAR Dataset/train/X_train.txt", sep = "")
      subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt", 
                                  sep = "")
+     names(subject_train) <- "Subject"
 
      ## merge the three parts of the training data set (subject, activity, 
      ## data) into a new data frame named "train" using cbind
@@ -112,10 +113,11 @@ if (!file.exists("./UCI HAR Dataset")) {
      names(test_activities) <- "ActKey"
 
      ## read the test data (X_test.txt) and the test subject data
-     ## (subject_test.txt)
+     ## (subject_test.txt) and name the subject column "Subject"
      test_data <- read.table("./UCI HAR Dataset/test/X_test.txt", sep = "")
      subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt",
                                 sep = "")
+     names(subject_test) <- "Subject"     
 
      ## merge the three parts of the test data set (subject, activity, data)
      ## into a new data frame named "test" using cbind
@@ -133,6 +135,7 @@ if (!file.exists("./UCI HAR Dataset")) {
      ## "left_join" function from the dplyr package)
      merged <- left_join(activity_labels, merged, by = "ActKey")
 
+     
      ## change the names of the columns in the "data" data frame to "ActKey," 
      ## "Activity," and "Subject" for the first three columns and the values 
      ## in the "Feature" column of the features data frame for the remaining 
@@ -147,7 +150,8 @@ if (!file.exists("./UCI HAR Dataset")) {
      ## subset the merged data frame to only the relevant columns ("Subject," 
      ## "Activity," and any of the remaining columns with "Mean," "mean," or 
      ## "std" in their name
-     merged <- merged[,grepl("Subject|Activity|[Mm]ean|std",names(merged))]
+     merged <- merged[,grepl("Activity|Subject|[Mm]ean|std",names(merged))]
+
 
 ## ***************************************************************************
 ## MAKE ALL COLUMN NAMES LEGAL FOR R, CHANGE THE SUBJECT COLUMN TO A FACTOR,
