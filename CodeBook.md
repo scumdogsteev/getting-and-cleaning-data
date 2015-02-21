@@ -14,8 +14,8 @@ which transformed the raw data into a wideform, tidy summary data set.
     2. The measurements of mean and standard deviation (i.e., those variables with the strings "mean" and "std" were extracted.
     3. Variable names were changed to be legal for R (i.e., parentheses, dashes, and commas were removed).
     4. Misnamed variables from the original data set (i.e., those with the string "BodyBody" in their names) were renamed ("Body" was used to replace "BodyBody"). 
-    5. The mean of each remaining variable for each combination of Activity and Subject was calculated resulting in 180 observations for each variable
-    6. The resulting data set (a data frame named "merged_summary") was exported to a text file (samsung_summary.txt) and uploaded to Coursera per the assignment
+    5. The mean of each remaining variable for each combination of Subject and Activity was calculated resulting in 180 observations for each variable (30 subjects * 6 activities = 180 Subject/Activity combinations).
+    6. The resulting data set (a data frame named "merged_summary") was exported to a text file (samsung_summary.txt) and uploaded to Coursera per the assignment.
   * For more detail as to how these transformations were performed, please 
   see [README](https://github.com/scumdogsteev/getting-and-cleaning-data/blob/master/README.md) and [run_analysis.R](https://github.com/scumdogsteev/gettingandcleaningdata/blob/master/run_analysis.R).
 
