@@ -6,7 +6,7 @@
 Activity Recognition Using Smartphones Dataset."  Please see "README.txt"
 accompanying that dataset's distribution for details regarding the
 collection of the data and see this repo's [README](https://github.com/scumdogsteev/getting-and-cleaning-data/blob/master/README.md) for [references](https://github.com/scumdogsteev/getting-and-cleaning-data/blob/master/README.md#references) including
-the original data set.
+the source of the original data set.
 * The data was read into R using a script ([run_analysis.R](https://github.com/scumdogsteev/gettingandcleaningdata/blob/master/run_analysis.R))
 which transformed the raw data into a wideform, tidy summary data set.
   * The following transformations were perfomed on the original data:
@@ -95,6 +95,8 @@ original data.
 * tBodyAccJerkMean
 * tBodyGyroMean
 * tBodyGyroJerkMean
+
+All variables are normalized.
 
 #### Variable Detail
 
