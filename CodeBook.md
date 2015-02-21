@@ -11,15 +11,11 @@ the source of the original data set.
 which transformed the raw data into a wideform, tidy summary data set.
   * The following transformations were perfomed on the original data:
     1. The training and test data sets were merged into a single data frame (named "merged").
-	2. The measurements of mean and standard deviation (i.e., those variables
-	with the strings "mean" and "std" were extracted.
-	3. Variable names were changed to be legal for R (i.e., parentheses, 
-	dashes, and commas were removed).
-	4. The mean of each variable for each combination of Activity and Subject
-	was calculated resulting in 180 observations for each variable
-	5. The resulting data set (a data frame named "merged_summary") was
-	exported to a text file (samsung_summary.txt) and uploaded to Coursera
-	per the assignment
+    2. The measurements of mean and standard deviation (i.e., those variables with the strings "mean" and "std" were extracted.
+    3. Variable names were changed to be legal for R (i.e., parentheses, dashes, and commas were removed).
+    4. Misnamed variables from the original data set (i.e., those with the string "BodyBody" in their names) were renamed ("Body" was used to replace "BodyBody"). 
+    5. The mean of each remaining variable for each combination of Activity and Subject was calculated resulting in 180 observations for each variable
+    6. The resulting data set (a data frame named "merged_summary") was exported to a text file (samsung_summary.txt) and uploaded to Coursera per the assignment
   * For more detail as to how these transformations were performed, please 
   see [README](https://github.com/scumdogsteev/getting-and-cleaning-data/blob/master/README.md) and [run_analysis.R](https://github.com/scumdogsteev/gettingandcleaningdata/blob/master/run_analysis.R).
 
@@ -96,7 +92,12 @@ original data.
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-All variables are normalized.
+All numeric variables are normalized.  There are also two factor variables:
+
+* Subject
+* Activity
+
+These represent the test subject and the activity measured, respectively.
 
 #### Variable Detail
 
