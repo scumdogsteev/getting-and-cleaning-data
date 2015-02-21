@@ -1,5 +1,6 @@
 ->DATA DICTIONARY - SAMSUNG ACTIVITY DATA<-
 ->GETTING AND CLEANING DATA COURSE PROJECT<-
+
 | Variable Name | Variable Number | Description | Variable Type | Variable Width | Values |
 |---------------|:---------------:|:-----------:|:-------------:|:--------------:|:-------|
 | Subject | 1 | Subject | Factor |  | 1-30 |
