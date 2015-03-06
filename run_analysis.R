@@ -135,7 +135,6 @@ if (!file.exists("./UCI HAR Dataset")) {
      ## "left_join" function from the dplyr package)
      merged <- left_join(activity_labels, merged, by = "ActKey")
 
-     
      ## change the names of the columns in the "data" data frame to "ActKey," 
      ## "Activity," and "Subject" for the first three columns and the values 
      ## in the "Feature" column of the features data frame for the remaining 
@@ -151,7 +150,6 @@ if (!file.exists("./UCI HAR Dataset")) {
      ## "Activity," and any of the remaining columns with "Mean," "mean," or 
      ## "std" in their name
      merged <- merged[,grepl("Activity|Subject|[Mm]ean|std",names(merged))]
-
 
 ## ***************************************************************************
 ## MAKE ALL COLUMN NAMES LEGAL FOR R, CHANGE THE SUBJECT COLUMN TO A FACTOR,
